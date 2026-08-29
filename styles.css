@@ -2028,4 +2028,18 @@ select.form-control option {
   .hero-thumbs-row {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .btn {
+    min-height: 48px; /* Ideal mobile touch tap target */
+  }
+}
+
+/* Mobile Performance & GPU Rendering Accelerations */
+.gallery-grid, .amenities-cards-grid, .profile-req-grid {
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
+}
+
+img {
+  content-visibility: auto;
 }

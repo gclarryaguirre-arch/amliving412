@@ -1,14 +1,14 @@
 /**
  * AM LIVING 412 - Apartaestudio Gran América (Calle 31 # 25B-30, Bogotá)
- * Interactive Application Logic & Gallery Controller
+ * Mobile-Optimized Performance Script & Interactive Controllers
  */
 
-// Complete Gallery Dataset (16 Real Photos)
+// Mobile-Optimized Gallery Dataset (HD WebP + Ultra-Lightweight Thumbnails)
 const galleryData = [
   {
     id: 1,
-    src: "Fotosapto/03 Sala y cocina.png",
-    thumb: "Fotosapto/03 Sala y cocina.png",
+    src: "Fotosapto/optimized/03 Sala y cocina.webp",
+    thumb: "Fotosapto/thumbs/03 Sala y cocina.webp",
     title: "Sala y Cocina Integrada",
     category: "apto",
     tag: "Apartamento",
@@ -16,8 +16,8 @@ const galleryData = [
   },
   {
     id: 2,
-    src: "Fotosapto/05 Habitación.jpg",
-    thumb: "Fotosapto/05 Habitación.jpg",
+    src: "Fotosapto/optimized/05 Habitación.webp",
+    thumb: "Fotosapto/thumbs/05 Habitación.webp",
     title: "Zona de Habitación",
     category: "apto",
     tag: "Apartamento",
@@ -25,8 +25,8 @@ const galleryData = [
   },
   {
     id: 3,
-    src: "Fotosapto/04 Cocina2 n.jpg",
-    thumb: "Fotosapto/04 Cocina2 n.jpg",
+    src: "Fotosapto/optimized/04 Cocina2 n.webp",
+    thumb: "Fotosapto/thumbs/04 Cocina2 n.webp",
     title: "Cocina Integral",
     category: "apto",
     tag: "Apartamento",
@@ -34,8 +34,8 @@ const galleryData = [
   },
   {
     id: 4,
-    src: "Fotosapto/06 Baño1.jpg",
-    thumb: "Fotosapto/06 Baño1.jpg",
+    src: "Fotosapto/optimized/06 Baño1.webp",
+    thumb: "Fotosapto/thumbs/06 Baño1.webp",
     title: "Baño Completo",
     category: "apto",
     tag: "Apartamento",
@@ -43,8 +43,8 @@ const galleryData = [
   },
   {
     id: 5,
-    src: "Fotosapto/07 Baño2.jpg",
-    thumb: "Fotosapto/07 Baño2.jpg",
+    src: "Fotosapto/optimized/07 Baño2.webp",
+    thumb: "Fotosapto/thumbs/07 Baño2.webp",
     title: "Ducha y División en Vidrio",
     category: "apto",
     tag: "Apartamento",
@@ -52,8 +52,8 @@ const galleryData = [
   },
   {
     id: 6,
-    src: "Fotosapto/08 Closet.jpg",
-    thumb: "Fotosapto/08 Closet.jpg",
+    src: "Fotosapto/optimized/08 Closet.webp",
+    thumb: "Fotosapto/thumbs/08 Closet.webp",
     title: "Clóset Empotrado",
     category: "apto",
     tag: "Apartamento",
@@ -61,8 +61,8 @@ const galleryData = [
   },
   {
     id: 7,
-    src: "Fotosapto/10 Coworking2.jpg",
-    thumb: "Fotosapto/10 Coworking2.jpg",
+    src: "Fotosapto/optimized/10 Coworking2.webp",
+    thumb: "Fotosapto/thumbs/10 Coworking2.webp",
     title: "Zona de Coworking",
     category: "clubhouse",
     tag: "Club House",
@@ -70,8 +70,8 @@ const galleryData = [
   },
   {
     id: 8,
-    src: "Fotosapto/12 Gimnasio1.jpg",
-    thumb: "Fotosapto/12 Gimnasio1.jpg",
+    src: "Fotosapto/optimized/12 Gimnasio1.webp",
+    thumb: "Fotosapto/thumbs/12 Gimnasio1.webp",
     title: "Gimnasio en Terraza",
     category: "clubhouse",
     tag: "Club House",
@@ -79,8 +79,8 @@ const galleryData = [
   },
   {
     id: 9,
-    src: "Fotosapto/14 Terraza.jpg",
-    thumb: "Fotosapto/14 Terraza.jpg",
+    src: "Fotosapto/optimized/14 Terraza.webp",
+    thumb: "Fotosapto/thumbs/14 Terraza.webp",
     title: "Terraza Lounge Panorámica",
     category: "clubhouse",
     tag: "Club House",
@@ -88,8 +88,8 @@ const galleryData = [
   },
   {
     id: 10,
-    src: "Fotosapto/11 Bbq.jpg",
-    thumb: "Fotosapto/11 Bbq.jpg",
+    src: "Fotosapto/optimized/11 Bbq.webp",
+    thumb: "Fotosapto/thumbs/11 Bbq.webp",
     title: "Zonas BBQ",
     category: "clubhouse",
     tag: "Club House",
@@ -97,8 +97,8 @@ const galleryData = [
   },
   {
     id: 11,
-    src: "Fotosapto/09 cinema1 n.jpg",
-    thumb: "Fotosapto/09 cinema1 n.jpg",
+    src: "Fotosapto/optimized/09 cinema1 n.webp",
+    thumb: "Fotosapto/thumbs/09 cinema1 n.webp",
     title: "Sala de Cine Privada",
     category: "clubhouse",
     tag: "Club House",
@@ -106,8 +106,8 @@ const galleryData = [
   },
   {
     id: 12,
-    src: "Fotosapto/sala de juegos.png",
-    thumb: "Fotosapto/sala de juegos.png",
+    src: "Fotosapto/optimized/sala de juegos.webp",
+    thumb: "Fotosapto/thumbs/sala de juegos.webp",
     title: "Sala de Juegos",
     category: "clubhouse",
     tag: "Club House",
@@ -115,8 +115,8 @@ const galleryData = [
   },
   {
     id: 13,
-    src: "Fotosapto/recepción.png",
-    thumb: "Fotosapto/recepción.png",
+    src: "Fotosapto/optimized/recepción.webp",
+    thumb: "Fotosapto/thumbs/recepción.webp",
     title: "Lobby y Recepción 24/7",
     category: "clubhouse",
     tag: "Club House",
@@ -124,8 +124,8 @@ const galleryData = [
   },
   {
     id: 14,
-    src: "Fotosapto/01 Fachada 1.jpg",
-    thumb: "Fotosapto/01 Fachada 1.jpg",
+    src: "Fotosapto/optimized/01 Fachada 1.webp",
+    thumb: "Fotosapto/thumbs/01 Fachada 1.webp",
     title: "Fachada del Edificio",
     category: "exterior",
     tag: "Exterior",
@@ -133,8 +133,8 @@ const galleryData = [
   },
   {
     id: 15,
-    src: "Fotosapto/02 Fachada 2.jpg",
-    thumb: "Fotosapto/02 Fachada 2.jpg",
+    src: "Fotosapto/optimized/02 Fachada 2.webp",
+    thumb: "Fotosapto/thumbs/02 Fachada 2.webp",
     title: "Acceso Peatonal y Fachada",
     category: "exterior",
     tag: "Exterior",
@@ -142,8 +142,8 @@ const galleryData = [
   },
   {
     id: 16,
-    src: "Fotosapto/13 Vista.jpg",
-    thumb: "Fotosapto/13 Vista.jpg",
+    src: "Fotosapto/optimized/13 Vista.webp",
+    thumb: "Fotosapto/thumbs/13 Vista.webp",
     title: "Vista Panorámica de Bogotá",
     category: "exterior",
     tag: "Exterior",
@@ -175,7 +175,7 @@ const toggleTabs = document.querySelectorAll(".toggle-tab");
 const offerBodyArriendo = document.getElementById("offerBodyArriendo");
 const offerBodyVenta = document.getElementById("offerBodyVenta");
 
-// 1. Initialize Dynamic Gallery
+// 1. Mobile-Optimized Gallery Rendering
 function renderGallery(filter = "all") {
   currentFilter = filter;
   currentFilteredList = filter === "all" 
@@ -193,7 +193,7 @@ function renderGallery(filter = "all") {
     card.setAttribute("aria-label", `Ver ${item.title}`);
 
     card.innerHTML = `
-      <img src="${item.src}" alt="${item.title}" loading="lazy">
+      <img src="${item.thumb}" alt="${item.title}" loading="lazy" decoding="async" width="400" height="300">
       <div class="gallery-item-overlay">
         <span class="gallery-item-tag">${item.tag}</span>
         <h4 class="gallery-item-title">${item.title}</h4>
@@ -215,7 +215,7 @@ function renderGallery(filter = "all") {
   });
 }
 
-// 2. Filter Buttons Event Listeners
+// 2. Filter Buttons Listeners
 filterButtons.forEach(btn => {
   btn.addEventListener("click", () => {
     filterButtons.forEach(b => b.classList.remove("active"));
@@ -224,7 +224,7 @@ filterButtons.forEach(btn => {
   });
 });
 
-// 3. Lightbox Functions
+// 3. Lightbox Operations
 function openLightbox(index) {
   currentLightboxIndex = index;
   updateLightboxContent();
@@ -280,13 +280,13 @@ window.changeHeroPreview = function(src) {
     setTimeout(() => {
       heroMainImg.src = src;
       heroMainImg.style.opacity = "1";
-    }, 150);
+    }, 120);
   }
 
   const thumbs = document.querySelectorAll(".hero-thumb");
   thumbs.forEach(thumb => {
-    const img = thumb.querySelector("img");
-    if (img && img.getAttribute("src") === src) {
+    const clickAttr = thumb.getAttribute("onclick") || "";
+    if (clickAttr.includes(src)) {
       thumb.classList.add("active");
     } else {
       thumb.classList.remove("active");
@@ -344,11 +344,14 @@ if (contactForm) {
   });
 }
 
-// 8. Leaflet Interactive Map Initialization
+// 8. Lazy Loaded Map (Saves Data and CPU on Mobile)
+let mapInitialized = false;
 function initPropertyMap() {
+  if (mapInitialized) return;
   const mapElement = document.getElementById("propertyMap");
   if (!mapElement || typeof L === "undefined") return;
 
+  mapInitialized = true;
   const lat = 4.6270135677293;
   const lng = -74.082161564242;
 
@@ -358,10 +361,9 @@ function initPropertyMap() {
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '© OpenStreetMap'
   }).addTo(map);
 
-  // Custom Building Icon Marker
   const customIcon = L.divIcon({
     className: "custom-map-pin",
     html: `<div style="background:#102a43;color:#d4af37;padding:10px 14px;border-radius:24px;border:2px solid #d4af37;box-shadow:0 4px 15px rgba(0,0,0,0.3);font-weight:bold;font-size:13px;display:flex;align-items:center;gap:6px;white-space:nowrap;"><i class="fa-solid fa-building-user"></i> AM Living 412</div>`,
@@ -380,8 +382,28 @@ function initPropertyMap() {
   `).openPopup();
 }
 
+// 9. Intersection Observer to Load Map Only When Approaching Viewport
+function setupMapObserver() {
+  const mapElement = document.getElementById("propertyMap");
+  if (!mapElement) return;
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          initPropertyMap();
+          observer.disconnect();
+        }
+      });
+    }, { rootMargin: "300px" });
+    observer.observe(mapElement);
+  } else {
+    initPropertyMap();
+  }
+}
+
 // Initialize on DOM Ready
 document.addEventListener("DOMContentLoaded", () => {
   renderGallery("all");
-  initPropertyMap();
+  setupMapObserver();
 });
