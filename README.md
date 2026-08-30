@@ -1,6 +1,6 @@
 # AM LIVING 412 - Apartaestudio en Gran América, Bogotá
 
-Página web promocional moderna e interactiva para la venta y arriendo del apartaestudio ubicado en la **Calle 31 No. 25B-30**, Barrio Gran América, Localidad Teusaquillo, Bogotá D.C.
+Página web promocional moderna e interactiva para la venta y arriendo del apartaestudio ubicado en la **Carrera 31 No. 25B-30**, Barrio Gran América, Localidad Teusaquillo, Bogotá D.C.
 
 ## 🏢 Características de la Propiedad
 - **Área:** 25.40 m² construidos (Piso 4 de 7).

@@ -1,5 +1,5 @@
 /**
- * AM LIVING 412 - Apartaestudio Gran América (Calle 31 # 25B-30, Bogotá)
+ * AM LIVING 412 - Apartaestudio Gran América (Carrera 31 # 25B-30, Bogotá)
  * Mobile-Optimized Performance Script & Interactive Controllers
  */
 
@@ -129,7 +129,7 @@ const galleryData = [
     title: "Fachada del Edificio",
     category: "exterior",
     tag: "Exterior",
-    desc: "Edificio moderno de 7 pisos ubicado en la Calle 31 con diseño vanguardista."
+    desc: "Edificio moderno de 7 pisos ubicado en la Carrera 31 con diseño vanguardista."
   },
   {
     id: 15,
@@ -333,7 +333,7 @@ if (contactForm) {
     const msg = document.getElementById("leadMessage").value.trim();
 
     const targetWhatsApp = "573006598430"; // Número oficial de contacto
-    let waText = `¡Hola! Mi nombre es ${name} (Tel: ${phone}).\nEstoy interesado(a) en: *${interest}* para el apartaestudio en Gran América (Calle 31 # 25B-30).`;
+    let waText = `¡Hola! Mi nombre es ${name} (Tel: ${phone}).\nEstoy interesado(a) en: *${interest}* para el apartaestudio en Gran América (Carrera 31 # 25B-30).`;
     
     if (msg) {
       waText += `\n\nMensaje adicional: ${msg}`;
@@ -376,7 +376,7 @@ function initPropertyMap() {
   marker.bindPopup(`
     <div style="font-family:sans-serif;padding:6px;">
       <h4 style="margin:0 0 4px 0;color:#102a43;font-size:14px;">Apartaestudio AM Living 412</h4>
-      <p style="margin:0;font-size:12px;color:#475569;">Calle 31 No. 25B-30 · Gran América</p>
+      <p style="margin:0;font-size:12px;color:#475569;">Carrera 31 No. 25B-30 · Gran América</p>
       <div style="margin-top:6px;font-size:11px;color:#059669;font-weight:bold;">¡A 1 cuadra de Cl 26 y Cra 30!</div>
     </div>
   `).openPopup();
